@@ -23,6 +23,10 @@ locals {
         subnet4_id = {
             name = "/pragra/project-a/subnet4/id"
             value = aws_subnet.subnet4.id
+        }
+        ec2_sg_id = {
+            name = "/pragra/project-a/ec2/sg/id"
+            value = aws_security_group.ec2_sg.id
         } 
     }
 }
